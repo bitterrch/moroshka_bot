@@ -28,7 +28,7 @@ async def send_dinner_notification(bot: Bot) -> None:
                         content += f'{minutes} минут!'
 
                 else:
-                    break
+                    continue
 
                 await bot.send_message(user[0], content, reply_markup=keyboard)
 
